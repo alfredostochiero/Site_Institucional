@@ -16,11 +16,11 @@ class contatoController extends controller {
             $email = addslashes($_POST['email']);
             $msg = addslashes($_POST['mensagem']);
             
-            $para = "suporte@b7web.com.br";
+            $para = "desenvolvedor@alfredoaugusto.com.br";
             $assunto = "Dúvida do site";
             $mensagem = "Nome: ".$nome."<br/>E-mail: ".$email."<br/>Mensagem: ".$msg;
             
-            $cabecalho = 'From: suporte@b7web.com.br'. "\r\n".
+            $cabecalho = 'From: desenvolvedor@alfredoaugusto.com.br'. "\r\n".
                     'Reply-To: '.$email. "\r\n".
                     'X-Mailer: PHP/'.phpversion();
                         
